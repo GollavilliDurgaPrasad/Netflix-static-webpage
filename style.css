@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
+        url('https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-en-20240115-trifectadaily-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 8px solid #222;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-select {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-in-btn {
+    background: #e50914;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.sign-in-btn:hover {
+    background: #f40612;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-top: 145px;
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.hero h2 {
+    font-size: 1.625rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.email-signup input {
+    width: 450px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+}
+
+.email-signup input:focus {
+    outline: none;
+    border-color: #0071eb;
+}
+
+.email-signup button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.625rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.email-signup button:hover {
+    background: #f40612;
+}
+
+/* Features Section */
+.features {
+    padding: 70px 45px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 8px solid #222;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-text {
+    width: 50%;
+    padding-right: 48px;
+}
+
+.feature-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.feature-text p {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.feature-img {
+    width: 50%;
+    position: relative;
+}
+
+.feature-img img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 70px 45px;
+    text-align: center;
+    border-bottom: 8px solid #222;
+}
+
+.faq h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.faq-list {
+    max-width: 815px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #2D2D2D;
+    color: #fff;
+    padding: 24px;
+    font-size: 1.625rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: #4e4e4e;
+}
+
+.faq-question::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' d='M17 17V3h2v14h14v2H19v14h-2V19H3v-2h14z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.email-signup-section {
+    max-width: 815px;
+    margin: 50px auto 0;
+}
+
+.email-signup-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    padding: 70px 45px;
+    color: #757575;
+    background: #000;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-country {
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .feature-text,
+    .feature-img {
+        width: 100%;
+    }
+
+    .feature-text {
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+    .feature-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-links {}
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .email-signup button {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+    }
+
+    .feature-text p {
+        font-size: 1.125rem;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1.125rem;
+        padding: 15px 20px;
+    }
+
+    .faq-question::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-links {
+
+        text-align: center;
+    }
+}
