@@ -1,16 +1,25 @@
-🔥 Netflix Static Landing Page
+🎬 Netflix Static Landing Page
 I developed a Netflix-inspired static landing page using HTML and CSS to replicate the visual appeal and layout of the original Netflix homepage. The design includes key sections such as a hero banner with a background image, navigation bar, call-to-action buttons, and responsive layout to maintain structure across different screen sizes.
 
-Tools Used:
-🔹 HTML5 – for structuring the content
-🔹 CSS3 – for styling, layout, responsiveness, and hover effects
+🔧 Tools Used
+HTML5 – Markup structure
 
-Key Features:
-✅ Fully responsive design
-✅ Clean and modern Netflix-style UI
-✅ Recreated key UI sections including the header, feature content, and footer
-✅ Smooth hover effects and button transitions
+CSS3 – Styling, layout, responsiveness, and transitions
 
-This project demonstrates my ability to translate real-world designs into functional front-end layouts, focusing purely on styling and responsiveness using just HTML and CSS.
+📌 Features
 
-link:https://netflixwebss.ccbp.tech/
+
+✅ Clean and responsive layout
+
+✅ Netflix-style design with hero banner and background image
+
+✅ Navigation bar and call-to-action buttons
+
+✅ Smooth hover effects and visual transitions
+
+✅ Fully static front-end project – no frameworks or JavaScript used
+
+📸 Preview
+
+🚀 Live Demo
+https://netflixwebss.ccbp.tech/
